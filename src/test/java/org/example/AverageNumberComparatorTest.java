@@ -17,6 +17,9 @@ public class AverageNumberComparatorTest {
         comparator = new AverageNumberComparator();
     }
 
+    /**
+     * Этот тест проверяет сценарий, когда первый список имеет большее среднее значение. В этом случае ожидается, что программа выведет сообщение "Первый список имеет большее среднее значение". Этот сценарий выбран, потому что он представляет ситуацию, когда разница в средних значениях списков явна.
+     */
     @Test
     public void testCompareLists_FirstListHasGreaterAverage() {
         List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
@@ -25,6 +28,9 @@ public class AverageNumberComparatorTest {
         Assertions.assertEquals("Первый список имеет большее среднее значение", result);
     }
 
+    /**
+     *  Этот тест проверяет сценарий, когда второй список имеет большее среднее значение. Ожидается, что программа выведет сообщение "Второй список имеет большее среднее значение". Этот сценарий выбран для проверки правильности обработки случая, когда второй список имеет большее среднее значение.
+     */
     @Test
     public void testCompareLists_SecondListHasGreaterAverage() {
         List<Integer> list1 = Arrays.asList(1, 2, 3);
@@ -33,6 +39,9 @@ public class AverageNumberComparatorTest {
         Assertions.assertEquals("Второй список имеет большее среднее значение", result);
     }
 
+    /**
+     * Этот тест проверяет сценарий, когда средние значения двух списков равны. Ожидается, что программа выведет сообщение "Средние значения равны". Этот сценарий выбран, чтобы убедиться, что программа правильно обрабатывает случай с равными средними значениями.
+     */
     @Test
     public void testCompareLists_AveragesAreEqual() {
         List<Integer> list1 = Arrays.asList(1, 2, 3, 4);
@@ -41,6 +50,9 @@ public class AverageNumberComparatorTest {
         Assertions.assertEquals("Средние значения равны", result);
     }
 
+    /**
+     * Этот тест проверяет сценарий, когда оба списка пусты. Ожидается, что программа также выведет сообщение "Средние значения равны". Этот сценарий выбран, чтобы удостовериться, что программа корректно обрабатывает случай с пустыми списками.
+     */
     @Test
     public void testCompareLists_EmptyLists() {
         List<Integer> list1 = Arrays.asList();
