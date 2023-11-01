@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <module name="TreeWalker">
+        <module name="EmptyBlock">
+            <property name="option" value="text"/>
+        </module>
+        <module name="Indentation"/>
+        <module name="LeftCurly"/>
+        <module name="RightCurly"/>
+        <module name="NeedBraces"/>
+        <module name="EmptyLineSeparator"/>
+        <module name="NoWhitespaceBefore"/>
+        <module name="JavadocType"/>
+        <module name="JavadocTagContinuationIndentation"/>
+        <module name="MethodParamPad"/>
+        <module name="MethodTypeParameterPad"/>
+        <module name="MethodCallParenPad"/>
+        <module name="OperatorWrap"/>
+        <module name="ImportOrder"/>
+    </module>
+</module>
